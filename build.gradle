@@ -12,16 +12,23 @@ buildscript {
     }
 }
 
-apply plugin: 'java'
-apply plugin: 'kotlin2js'
+allprojects{
+    apply plugin: 'kotlin2js'
+    apply plugin: "kotlin-dce-js"
 
-sourceCompatibility = 1.8
+    repositories {
+        mavenCentral()
+    }
 
-repositories {
-    mavenCentral()
+    dependencies {
+        compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
+        testCompile group: 'junit', name: 'junit', version: '4.12'
+    }
+
+    compileKotlin2Js{
+        kotlinOptions.sourceMap = false
+        kotlinOptions.sourceMapEmbedSources = "always"
+    }
 }
 
-dependencies {
-    compile "org.jetbrains.kotlin:kotlin-stdlib-js:$kotlin_version"
-    testCompile group: 'junit', name: 'junit', version: '4.12'
-}
+
