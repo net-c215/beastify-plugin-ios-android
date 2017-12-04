@@ -21,9 +21,7 @@ fun main(args: Array<String>) {
             )
     )
             .then { listenForClicks() }
-            .catch {
-
-            }
+            .catch(::reportExecuteScriptError)
 }
 
 fun listenForClicks(){
@@ -31,7 +29,7 @@ fun listenForClicks(){
         val target = it.target as Element ?: return@addEventListener
         browser.tabs.query(Query(true,true))
                 .then { handleClick(target, it[0].id) }
-                .catch {  }
+                .catch(::reportError)
     })
 }
 
