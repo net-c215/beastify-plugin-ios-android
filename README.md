@@ -32,7 +32,7 @@ Running the plugin can be done as follows:
 $ ./gradlew runDceKotlinJs --continuous
 ```
 
-This will run the task `runDceKotlinJS` which will remove Dead code from the Kotlin Standard library that is not used (or called) and will watch changes made in the [main.kt](/src/main/kotlin/main.kt) file.
+This will run the task `runDceKotlinJS` which will remove Dead code from the Kotlin Standard library that is not used (or called) and will watch changes made in the the modules.
 
 
 ```bash
@@ -41,19 +41,7 @@ $ npm run start
 $ yarn start
 ```
 
-This will open up the Firefox browser. You can now navigate to the [kotlinlang](https://kotlinlang.org) website and you will see a border color around the website.
-
-Making changes is simple. Simply navigate to [main.kt](/src/main/kotlin/main.kt) file and change the color of the border or even the width or the style of the border.
-
-```kotlin
-import kotlin.browser.document
-
-fun main(args: Array<String>) {
-    document.body?.style?.border = "15px solid red"
-}
-```
-> The changes will be reflected on the browser after a couple of seconds
-
+This will open up the Firefox browser. You can now navigate to Firefox, open a tab and you should see a button option which will give you options of animals to select from.
 
 An important thing to note:
 
@@ -64,9 +52,9 @@ There is a manifest.json file in the root of the directory which is used by the 
 ```json
 {
   "manifest_version": 2,
-  "name": "Kotlin Borderify",
+  "name": "<NAME OF PLUGIN>",
   "version": "1.0",
-  "description": "Adds a color border to kotlinlang.org",
+  "description": "<DESCRIPTION OF PLUGIN>",
   "content_scripts": [
     {
       "matches": [

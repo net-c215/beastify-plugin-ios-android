@@ -1,0 +1,16 @@
+{
+  "name": "beastify",
+  "version": "1.0.0",
+  "description": "Add an image of an animal to the current open Tab on firefox",
+  "main": "index.js",
+  "repository": "https://github.com/BrianLusina/beastify-plugin",
+  "author": "Brian Lusina <lusinabrian@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "web-ext": "^2.2.2"
+  },
+  "scripts": {
+    "run": "web-ext run"
+  }
+}
