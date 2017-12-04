@@ -20,7 +20,7 @@
       }
     ],
     "default_title": "Beastify",
-    "default_popup": "popup/choose_beast.html"
+    "default_popup": "popup/resources/choose_beast.html"
   },
   "web_accessible_resources": [
     "beasts/frog.jpg",

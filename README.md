@@ -73,3 +73,7 @@ Note the `js` tag which is a list of the JavaScript files the plugin will use. A
 `gradle` task and no changes are reflected, make sure that the correct `js` files are being used
 
 The JS file that the compiler will compile from Kotlin to JS is `build/classes/main/min/borderify.js` and the Kotlin standard library is `build/classes/main/min/kotlin.js`.
+
+## Attributions
+
+Inspiration comes from [@Cypresssious](https://medium.com/@Cypressious/your-second-firefox-extension-in-kotlin-bafd91d87c41)
