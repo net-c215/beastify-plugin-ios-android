@@ -11,6 +11,6 @@
     "web-ext": "^2.2.2"
   },
   "scripts": {
-    "run": "web-ext run"
+    "start": "web-ext run"
   }
 }

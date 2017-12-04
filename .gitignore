@@ -4,6 +4,9 @@
 /build/
 .idea/
 gradle.properties
+build/
+popup/build/
+content_script/build/
 # Ignore Gradle GUI config
 gradle-app.setting
 
