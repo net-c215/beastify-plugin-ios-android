@@ -8,7 +8,7 @@
   "license": "MIT",
   "private": true,
   "dependencies": {
-    "snyk": "^1.667.0",
+    "snyk": "^1.672.0",
     "web-ext": "^6.0.0"
   },
   "scripts": {
