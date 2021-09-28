@@ -9,7 +9,7 @@
   "private": true,
   "dependencies": {
     "snyk": "^1.697.0",
-    "web-ext": "^6.3.0"
+    "web-ext": "^6.4.0"
   },
   "scripts": {
     "start": "web-ext run",
